@@ -11,7 +11,7 @@
         projetos inovadores. Desejo enfrentar desafios e evoluir
         profissionalmente em colaboração com equipes experientes.
       </p>
-      <button><a href="#aboutMe">Saiba mais sobre mim</a></button>
+      <button>Leia mais sobre mim</button>
     </div>
     <div class="img">
       <img src="../../../assets/imgs/teste.png" alt="" srcset="" />
@@ -63,14 +63,25 @@
       <h2>Habilidades</h2>
     </div>
 
-    <div class="skills">
+    <div class="skills" >
       @for(skill of skills; track skill) {
-      <div class="skill">
-        <p class="title">{{ skill.name }}</p>
-        <img [src]="skill.icon" alt="" srcset="" class="skill-icon" />
-        <p class="level">{{ skill.level }}</p>
-        <p class="time">{{ skill.time }} anos</p>
-      </div>
+        <div class="skill">
+          <div class="skill-infos">
+            <p class="title">{{ skill.name }}</p>
+            <img [src]="skill.icon" alt="" class="skill-icon" />
+            <p class="level">{{ skill.level }}</p>
+            <p class="time">{{ skill.time }} anos</p>
+          </div>
+        
+          <div class="skill-details">
+            <p class="title">{{ skill.name }}</p>
+            <ul>
+              <li>Nivel: <span>{{ skill.level }}</span></li>
+              <li>Tempo de experiencia: <span>{{ skill.time }} anos</span></li>
+              <li>Experiencia: <span>{{skill.experience}}</span></li>
+            </ul>
+          </div>
+        </div>
       }
     </div>
   </div>
