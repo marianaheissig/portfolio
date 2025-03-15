@@ -1,0 +1,77 @@
+<div class="main">
+  <navbar />
+
+  <div class="first-section">
+    <div class="texts">
+      <h1>Olá, eu sou a <span class="highlight">Mariana</span></h1>
+      <p>Desenvolvedora Frontend</p>
+      <p class="desc">
+        Meu objetivo é atuar como Desenvolvedora Frontend, utilizando minhas
+        habilidades em Angular, Firebase e TypeScript para agregar valor a
+        projetos inovadores. Desejo enfrentar desafios e evoluir
+        profissionalmente em colaboração com equipes experientes.
+      </p>
+      <button><a href="#aboutMe">Saiba mais sobre mim</a></button>
+    </div>
+    <div class="img">
+      <img src="../../../assets/imgs/teste.png" alt="" srcset="" />
+    </div>
+  </div>
+
+  <div class="second-section" id="aboutMe">
+    <div class="title">
+      <h2>Sobre mim</h2>
+    </div>
+
+    <div class="place">
+      <img src="../../../assets/imgs/about.png" alt="" class="imagem left" />
+      <div class="desc">
+        <div class="title">Etec de Guarulhos</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          suscipit, porro magni quasi earum dolores deserunt eligendi distinctio
+          provident animi placeat quo dicta perferendis, debitis perspiciatis
+          molestiae ipsam voluptatum sapiente!Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Consequuntur suscipit, porro magni quasi
+          earum dolores deserunt eligendi distinctio provident animi placeat quo
+          dicta perferendis, debitis perspiciatis molestiae ipsam voluptatum
+          sapiente!
+        </p>
+      </div>
+    </div>
+
+    <div class="place">
+      <div class="desc">
+        <div class="title">Universidade Cruzeiro do Sul</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          suscipit, porro magni quasi earum dolores deserunt eligendi distinctio
+          provident animi placeat quo dicta perferendis, debitis perspiciatis
+          molestiae ipsam voluptatum sapiente!Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Consequuntur suscipit, porro magni quasi
+          earum dolores deserunt eligendi distinctio provident animi placeat quo
+          dicta perferendis, debitis perspiciatis molestiae ipsam voluptatum
+          sapiente!
+        </p>
+      </div>
+      <img src="../../../assets/imgs/about2.png" alt="" class="imagem" />
+    </div>
+  </div>
+
+  <div class="third-section" id="skills">
+    <div class="title">
+      <h2>Habilidades</h2>
+    </div>
+
+    <div class="skills">
+      @for(skill of skills; track skill) {
+      <div class="skill">
+        <p class="title">{{ skill.name }}</p>
+        <img [src]="skill.icon" alt="" srcset="" class="skill-icon" />
+        <p class="level">{{ skill.level }}</p>
+        <p class="time">{{ skill.time }} anos</p>
+      </div>
+      }
+    </div>
+  </div>
+</div>
