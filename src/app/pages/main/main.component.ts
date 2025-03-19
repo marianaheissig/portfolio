@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { CardsComponent } from "../../components/cards/cards.component";
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarComponent, CardsComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

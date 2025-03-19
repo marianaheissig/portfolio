@@ -8,7 +8,7 @@
 .main {
   min-height: 100vh;
 
-  .first-section, .second-section {
+  .first-section, .second-section, .third-section, .fourth-section {
     padding-bottom: 3rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.144) 0px 6px 6px;
     
@@ -53,109 +53,17 @@
   }
 
 }
-.second-section {
-  .place {
-    display: flex;
-    align-items: center;
-    padding-right: 12rem;
-    padding-left: 12rem;
-    gap: 1rem;
-    margin-bottom: 5rem;
-
-    .desc {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 2rem;
-      width: 100%;
-      font-size: 1rem;
-      background-color: #1b0b5c;
-      border-radius: 5rem;
-      padding: 2rem;
-      
-      .title {
-        font-size: 2rem;
-        font-family: "Space Mono", serif;
-        font-weight: 600;
-        border-bottom: 1px dashed white;
-        margin-bottom: 1rem;
-        margin-top: 0px;
-      }
-
-      p {
-        width: 60rem;
-      }
-    }
-  }
-}
-
-// .third-section {
-//   .title { margin-bottom: 2rem; }
-  
-//   .skills {
-//     display: flex;
-//     justify-content: center;
-//     gap: 5rem;
-//     flex-wrap: wrap;
-//     transition: all 1s;
-//     position: relative;
-//   }
-
-//   .skill {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-//     width: 20%;
-//     transition: all 0.5s;
-
-//     .skill-infos p.title, .skill-details p.title {
-//       font-size: 1.55rem;
-//       font-family: "Space Mono", serif;
-//       font-weight: 600;
-//       margin: 0;
-//       margin-bottom: 0.5rem;
-//     } 
-
-//     .skill-infos {
-//       text-align: center;
-      
-//       .skill-icon {
-//         filter: grayscale(100%);
-//         height: 130px;
-//         transition: filter 0.5s;
-
-//         &:hover {
-//           filter: grayscale(0%);
-//         }
-//       }
-//     }
-
-
-//     &:hover {
-//       justify-content: start;
-
-//       .skill-infos .title, .skill-infos p {
-//         display: none;
-//       }
-      
-//       .skill-details {
-//         display: block;
-//       }
-//     }
-//   }
-// }
-
 .third-section {
   .title { margin-bottom: 2rem; }
 
   .skills {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
     flex-wrap: wrap;
     transition: all 1s ease-in-out;
     position: relative;
+    margin: 4rem;
   }
 
   .skill {
@@ -236,7 +144,6 @@
     }
   }
 }
-
 
 .title {
   display: flex;

@@ -20,42 +20,28 @@
 
   <div class="second-section" id="aboutMe">
     <div class="title">
-      <h2>Sobre mim</h2>
+      <h2>Vida acadêmica</h2>
     </div>
 
-    <div class="place">
-      <img src="../../../assets/imgs/about.png" alt="" class="imagem left" />
-      <div class="desc">
-        <div class="title">Etec de Guarulhos</div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          suscipit, porro magni quasi earum dolores deserunt eligendi distinctio
-          provident animi placeat quo dicta perferendis, debitis perspiciatis
-          molestiae ipsam voluptatum sapiente!Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Consequuntur suscipit, porro magni quasi
-          earum dolores deserunt eligendi distinctio provident animi placeat quo
-          dicta perferendis, debitis perspiciatis molestiae ipsam voluptatum
-          sapiente!
-        </p>
-      </div>
-    </div>
+    <cards 
+      [photoUrl]="'../../../assets/imgs/about.png'" 
+      [title]="'Etec de Guarulhos'" 
+      [subtitle]="'2020 - 2022'"
+      [text]="'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus vero sint illum culpa est quia? Dolore non eum possimus debitis necessitatibus maxime, quo iste porro odit! Qui, rerum enim.'" 
+      [imagePosition]="'left'"
+      >
+      
+    </cards>
 
-    <div class="place">
-      <div class="desc">
-        <div class="title">Universidade Cruzeiro do Sul</div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          suscipit, porro magni quasi earum dolores deserunt eligendi distinctio
-          provident animi placeat quo dicta perferendis, debitis perspiciatis
-          molestiae ipsam voluptatum sapiente!Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Consequuntur suscipit, porro magni quasi
-          earum dolores deserunt eligendi distinctio provident animi placeat quo
-          dicta perferendis, debitis perspiciatis molestiae ipsam voluptatum
-          sapiente!
-        </p>
-      </div>
-      <img src="../../../assets/imgs/about2.png" alt="" class="imagem" />
-    </div>
+
+    <cards 
+      [photoUrl]="'../../../assets/imgs/about2.png'" 
+      [title]="'Universidade Cruzeiro do Sul'" 
+      [subtitle]="'2024 - 2026'"
+      [text]="'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus vero sint illum culpa est quia? Dolore non eum possimus debitis necessitatibus maxime, quo iste porro odit! Qui, rerum enim.'" 
+      [imagePosition]="'right'"
+      >
+    </cards>
   </div>
 
   <div class="third-section" id="skills">
@@ -84,5 +70,23 @@
         </div>
       }
     </div>
+  </div>
+
+  <div class="fourth-section">
+    <div class="title">
+      <h2>Experiência profissional</h2>
+    </div>
+      <cards 
+        [photoUrl]="'../../../assets/imgs/finger-logo.png'" 
+        [title]="'Finger Digital'" 
+        [subtitle]="'08/2023 - 02/2025'"
+        [text]="'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus vero sint illum culpa est quia? Dolore non eum possimus debitis necessitatibus maxime, quo iste porro odit! Qui, rerum enim.'" 
+        [imagePosition]="'left'"
+      >
+      </cards>
+
+   
+  
+   
   </div>
 </div>

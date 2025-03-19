@@ -11,8 +11,6 @@ export class NavbarComponent {
 
   openPdf(): void {
     const pdfUrl = '../../assets/curriculo-mariana.pdf'; 
-    console.log(pdfUrl);
-    
     window.open(pdfUrl, '_blank'); 
   }
 }
