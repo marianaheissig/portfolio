@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { CardsComponent } from "../../components/cards/cards.component";
+import { ProjectsComponent } from '../../components/projects/projects.component';
+
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [NavbarComponent, CardsComponent],
+  imports: [NavbarComponent, CardsComponent, ProjectsComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
@@ -21,9 +23,11 @@ export class MainComponent {
     {name:'Vue.js', level: 'Básico', time: '+1', icon: '../../../assets/imgs/logos/vue.png', experience:'Acadêmica'},
     {name:'Node.js', level: 'Básico', time: '+1', icon: '../../../assets/imgs/logos/node.png', experience:'Acadêmica'},
     {name:'React', level: 'Básico', time: '+1', icon: '../../../assets/imgs/logos/react.png', experience:'Acadêmica'},
-
-
   ];
- 
+
+  projects = [
+    {name:'Projeto 1', image: '../../../assets/imgs/projects/project1.png', description: 'Descrição do projeto 1', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
+    {name:'Projeto 2', image: '../../../assets/imgs/projects/project2.png', description: 'Descrição do projeto 2', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
+   ]
 
 }
