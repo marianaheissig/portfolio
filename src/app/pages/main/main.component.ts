@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { CardsComponent } from "../../components/cards/cards.component";
 import { ProjectsComponent } from '../../components/projects/projects.component';
+import { CarouselModule } from 'primeng/carousel';
+
 
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [NavbarComponent, CardsComponent, ProjectsComponent],
+  imports: [NavbarComponent, CardsComponent, ProjectsComponent, CarouselModule],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

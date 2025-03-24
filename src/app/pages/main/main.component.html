@@ -93,7 +93,10 @@
   <div class="fifth-section">
     <div class="title"><h2>Projetos</h2></div>
 
+    <p-carousel [value]="projects" [numVisible]="3" [numScroll]="3" [circular]="false" >
+      <ng-template let-product #item>
     <div class="projects">
+
       @if(projects.length === 0) {
         <p>Nenhum projeto disponível</p>
       } @else {
@@ -109,5 +112,10 @@
         </projects>
       }
     }
-  </div>
+  </div> 
+      </ng-template>
+    </p-carousel>
+    
+</div>
+
 </div>
