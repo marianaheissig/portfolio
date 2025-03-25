@@ -148,6 +148,15 @@
 
 .fifth-section {
   padding-bottom: 1rem;
+  .no-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Space Mono", serif;
+    margin-top: 2rem;
+    opacity: 0.5;
+  }
   .carousel {
     margin-top: 2rem;
   }

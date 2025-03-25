@@ -29,8 +29,8 @@ export class MainComponent {
   ];
 
   projects = [
-    {name:'nome 1', image: '../../../assets/imgs/prototipo.jpg', description: 'Descrição do projeto 1', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
-    {name:'nome 2', image: '../../../assets/imgs/prototipo.jpg', description: 'Descrição do projeto 2', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
+    // {name:'nome 1', image: '../../../assets/imgs/prototipo.jpg', description: 'Descrição do projeto 1', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
+    // {name:'nome 2', image: '../../../assets/imgs/prototipo.jpg', description: 'Descrição do projeto 2', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
    ]
 
 }

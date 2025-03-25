@@ -23,24 +23,23 @@
       <h2>Vida acadêmica</h2>
     </div>
 
-    <cards 
-      [photoUrl]="'../../../assets/imgs/about.png'" 
-      [title]="'Etec de Guarulhos'" 
+    <cards
+      [photoUrl]="'../../../assets/imgs/about.png'"
+      [title]="'Etec de Guarulhos'"
       [subtitle]="'2020 - 2022'"
-      [text]="'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus vero sint illum culpa est quia? Dolore non eum possimus debitis necessitatibus maxime, quo iste porro odit! Qui, rerum enim.'" 
+      [text]="'Concluí o Ensino Médio integrado ao Técnico em Desenvolvimento de Sistemas pela Etec de Guarulhos em 2022, onde adquiri uma base sólida em tecnologia. Aprendi Desenvolvimento Web, com foco em criação de interfaces funcionais, e Banco de Dados MySQL, para estruturação e gerenciamento de informações. Desenvolvi sistemas utilizando C#, explorando lógica de programação e soluções robustas, além de noções de Design Básico para criar layouts intuitivos e visualmente agradáveis. Essa formação me preparou para atuar de forma prática e versátil na área de desenvolvimento.'
+      "
       [imagePosition]="'left'"
-      >
-      
+    >
     </cards>
 
-
-    <cards 
-      [photoUrl]="'../../../assets/imgs/about2.png'" 
-      [title]="'Universidade Cruzeiro do Sul'" 
+    <cards
+      [photoUrl]="'../../../assets/imgs/about2.png'"
+      [title]="'Universidade Cruzeiro do Sul'"
       [subtitle]="'2024 - 2026'"
-      [text]="'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus vero sint illum culpa est quia? Dolore non eum possimus debitis necessitatibus maxime, quo iste porro odit! Qui, rerum enim.'" 
+      [text]="'Graduanda em Análise e Desenvolvimento de Sistemas pela Universidade Cruzeiro do Sul, com previsão de conclusão em 2026, onde desenvolvo habilidades técnicas e analíticas para criar soluções de software inovadoras e eficientes.'"
       [imagePosition]="'right'"
-      >
+    >
     </cards>
   </div>
 
@@ -49,25 +48,31 @@
       <h2>Habilidades</h2>
     </div>
 
-    <div class="skills" >
+    <div class="skills">
       @for(skill of skills; track skill) {
-        <div class="skill">
-          <div class="skill-infos">
-            <p class="title">{{ skill.name }}</p>
-            <img [src]="skill.icon" alt="" class="skill-icon" />
-            <p class="level">{{ skill.level }}</p>
-            <p class="time">{{ skill.time }} anos</p>
-          </div>
-        
-          <div class="skill-details">
-            <p class="title">{{ skill.name }}</p>
-            <ul>
-              <li>Nivel: <span>{{ skill.level }}</span></li>
-              <li>Tempo de experiencia: <span>{{ skill.time }} anos</span></li>
-              <li>Experiencia: <span>{{skill.experience}}</span></li>
-            </ul>
-          </div>
+      <div class="skill">
+        <div class="skill-infos">
+          <p class="title">{{ skill.name }}</p>
+          <img [src]="skill.icon" alt="" class="skill-icon" />
+          <p class="level">{{ skill.level }}</p>
+          <p class="time">{{ skill.time }} anos</p>
         </div>
+
+        <div class="skill-details">
+          <p class="title">{{ skill.name }}</p>
+          <ul>
+            <li>
+              Nivel: <span>{{ skill.level }}</span>
+            </li>
+            <li>
+              Tempo de experiencia: <span>{{ skill.time }} anos</span>
+            </li>
+            <li>
+              Experiencia: <span>{{ skill.experience }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
       }
     </div>
   </div>
@@ -76,47 +81,54 @@
     <div class="title">
       <h2>Experiência profissional</h2>
     </div>
-      <cards 
-        [photoUrl]="'../../../assets/imgs/finger-logo.png'" 
-        [title]="'Finger Digital'" 
-        [subtitle]="'08/2023 - 02/2025'"
-        [text]="'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus vero sint illum culpa est quia? Dolore non eum possimus debitis necessitatibus maxime, quo iste porro odit! Qui, rerum enim.'" 
-        [imagePosition]="'left'"
-      >
-      </cards>
-
-   
-  
-   
+    <cards
+      [photoUrl]="'../../../assets/imgs/finger-logo.png'"
+      [title]="'Finger Digital'"
+      [subtitle]="'2023 - 2025'"
+      [text]="
+        'Desenvolvi experiência trabalhando na Finger Digital por 2 anos como desenvolvedora Fullstack, desenvolvi sites e painéis administrativos utilizando Angular, TypeScript e WordPress. Atuei na otimização de sistemas, resolução de bugs e integração com MySQL, colaborando em equipes ágeis para entregar projetos escaláveis e de alto impacto dentro dos prazos.'
+      "
+      [imagePosition]="'left'"
+    >
+    </cards>
   </div>
 
   <div class="fifth-section">
     <div class="title"><h2>Projetos</h2></div>
-
+    
+    @if(projects.length === 0) {
+    <div class="no-project">
+      <p>Nenhum projeto disponível.</p>
+    </div>
+    } @else {
     <div class="carousel">
-      <p-carousel [value]="projects" [numVisible]="1" [numScroll]="1" [circular]="true" autoplayInterval="5000">
+      <p-carousel
+        [value]="projects"
+        [numVisible]="1"
+        [numScroll]="1"
+        [circular]="true"
+        autoplayInterval="5000"
+      >
         <ng-template let-project #item>
-      <div class="projects">
-        @if(projects.length === 0) {
-          <p>Nenhum projeto disponível</p>
-        } @else {
+          <div class="projects">
+            @if(projects.length === 0) {
+            <p>Nenhum projeto disponível</p>
+            } @else {
             <projects
-            [name]="project.name"
-            [image]="project.image"
-            [description]="project.description"
-            [technologies]="project.technologies"
-            [link]="project.link"
+              [name]="project.name"
+              [image]="project.image"
+              [description]="project.description"
+              [technologies]="project.technologies"
+              [link]="project.link"
             >
-          </projects>
-      }
-        </div>
+            </projects>
+            }
+          </div>
         </ng-template>
       </p-carousel>
     </div>
-    
-</div>
+  }
+  </div>
 
-<app-footer />
-
-
+  <app-footer />
 </div>
