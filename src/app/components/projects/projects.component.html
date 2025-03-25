@@ -1,14 +1,11 @@
-<div class="project">
-    <div class="project-infos">
+    <div class="project-header">
       <p class="title">{{ name }}</p>
       <img [src]="image" alt="" class="project-image" />
-      <p class="description">{{ description }}</p>
     </div>
     <div class="project-details">
-      <ul>
-        <li>Descrição: <span>{{ description }}</span></li>
-        <li>Tecnologias: <span>{{ technologies }}</span></li>
-        <li>Link: <a href="{{ link }}" target="_blank">{{ link }}</a></li>
-      </ul>
+
+      <p class="desc">{{description}}</p>
+      <p class="tech">{{technologies}}</p>
+      <a href="{{link}}" target="_blank">Acessar projeto</a>
+     
     </div>
-  </div>

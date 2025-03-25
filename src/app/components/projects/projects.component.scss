@@ -1,0 +1,43 @@
+.project-header,
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 700px;
+  }
+}
+
+.project-details {
+    margin-top: 0rem;
+    .desc {
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-align: justify;
+        margin-top: 1rem;
+    }
+    .tech {
+        font-family: "Space Mono", serif;
+        font-size: 1rem;
+    }
+
+    a {
+        font-family: "Space Mono", serif;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            transition: all 0.3s ease;
+            color: #2b1191;
+            text-decoration: underline;
+        }
+    }
+}

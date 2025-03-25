@@ -93,28 +93,26 @@
   <div class="fifth-section">
     <div class="title"><h2>Projetos</h2></div>
 
-    <p-carousel [value]="projects" [numVisible]="3" [numScroll]="3" [circular]="false" >
-      <ng-template let-product #item>
-    <div class="projects">
-
-      @if(projects.length === 0) {
-        <p>Nenhum projeto disponível</p>
-      } @else {
-
-        @for(project of projects ; track project) {
-          <projects
-          [name]="project.name"
-          [image]="project.image"
-          [description]="project.description"
-          [technologies]="project.technologies"
-          [link]="project.link"
-          >
-        </projects>
+    <div class="carousel">
+      <p-carousel [value]="projects" [numVisible]="1" [numScroll]="1" [circular]="true" autoplayInterval="5000">
+        <ng-template let-project #item>
+      <div class="projects">
+        @if(projects.length === 0) {
+          <p>Nenhum projeto disponível</p>
+        } @else {
+            <projects
+            [name]="project.name"
+            [image]="project.image"
+            [description]="project.description"
+            [technologies]="project.technologies"
+            [link]="project.link"
+            >
+          </projects>
       }
-    }
-  </div> 
-      </ng-template>
-    </p-carousel>
+        </div>
+        </ng-template>
+      </p-carousel>
+    </div>
     
 </div>
 
