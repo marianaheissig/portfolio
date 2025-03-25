@@ -3,13 +3,14 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { CardsComponent } from "../../components/cards/cards.component";
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { CarouselModule } from 'primeng/carousel';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [NavbarComponent, CardsComponent, ProjectsComponent, CarouselModule],
+  imports: [NavbarComponent, CardsComponent, ProjectsComponent, CarouselModule, FooterComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
