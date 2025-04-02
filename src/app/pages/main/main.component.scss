@@ -146,16 +146,39 @@
   }
 }
 
+.fourth-section {
+  
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      background-color: #1b0b5c;
+      width: 15rem;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 50px;
+    }
+  }
+
+}
+
 .fifth-section {
   padding-bottom: 1rem;
   .no-project {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     font-family: "Space Mono", serif;
     margin-top: 2rem;
     opacity: 0.5;
+
+    img {
+      width: 10rem;
+      margin-bottom: 2rem;
+    }
   }
   .carousel {
     margin-top: 2rem;

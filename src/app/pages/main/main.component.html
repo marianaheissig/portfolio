@@ -11,7 +11,7 @@
         projetos inovadores. Desejo enfrentar desafios e evoluir
         profissionalmente em colaboração com equipes experientes.
       </p>
-      <button disabled>Leia mais sobre mim</button>
+      <!-- <button disabled>Leia mais sobre mim</button> -->
     </div>
     <div class="img">
       <img src="../../../assets/imgs/teste.png" alt="" srcset="" />
@@ -77,7 +77,7 @@
     </div>
   </div>
 
-  <div class="fourth-section">
+  <div class="fourth-section " id="experience">
     <div class="title">
       <h2>Experiência profissional</h2>
     </div>
@@ -91,14 +91,18 @@
       [imagePosition]="'left'"
     >
     </cards>
+
+    <div class="button"><button (click)="openPdf()">Baixar CV</button></div>
+
   </div>
 
-  <div class="fifth-section">
+  <div class="fifth-section" id="projects">
     <div class="title"><h2>Projetos</h2></div>
     
     @if(projects.length === 0) {
     <div class="no-project">
-      <p>Nenhum projeto disponível.</p>
+      <img src="../../../assets/imgs/tools.png" alt="">
+      <p>Em construção...</p>
     </div>
     } @else {
     <div class="carousel">

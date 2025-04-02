@@ -12,7 +12,7 @@
     list-style: none;
 
     li {
-        margin-top: 1rem;
+        margin-top: 3rem;
 
         a {
             color: #fff;
@@ -23,12 +23,14 @@
                 color: #2b1191;
             }
         }
-    }
+
+        &.sites {
+          a {
+            color: #df573c ;
+          }
+        }
+      }
+    
   }
 
-  button {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 50px;
-  }
 }

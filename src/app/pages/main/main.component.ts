@@ -33,4 +33,9 @@ export class MainComponent {
     // {name:'nome 2', image: '../../../assets/imgs/prototipo.jpg', description: 'Descrição do projeto 2', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
    ]
 
+   openPdf(): void {
+    const pdfUrl = '../../../assets/curriculo-mariana.pdf'; 
+    window.open(pdfUrl, '_blank'); 
+  }
+
 }
