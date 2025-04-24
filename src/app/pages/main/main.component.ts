@@ -3,6 +3,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { CardsComponent } from "../../components/cards/cards.component";
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { CarouselModule } from 'primeng/carousel';
+
 import { FooterComponent } from '../../components/footer/footer.component';
 
 
@@ -29,7 +30,7 @@ export class MainComponent {
   ];
 
   projects = [
-    // {name:'nome 1', image: '../../../assets/imgs/prototipo.jpg', description: 'Descrição do projeto 1', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
+    {name:'Site de previsão do tempo', image: '../../../assets/imgs/termometro-temporal.png', description: 'Projeto de site responsivo desenvolvido em Angular, que exibe a previsão do tempo em tempo real utilizando uma API de clima. A interface adapta-se a diferentes dispositivos e conta com modo noturno e diurno para melhor experiência do usuário.', technologies: 'Angular, HTML, CSS, Weatherapi', link: 'https://termometrotemporal.netlify.app' },
     // {name:'nome 2', image: '../../../assets/imgs/prototipo.jpg', description: 'Descrição do projeto 2', technologies: 'Angular, Firebase, HTML, CSS', link: ' #' },
    ]
 
